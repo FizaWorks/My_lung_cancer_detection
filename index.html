@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lung Cancer Detection</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Lung Cancer Detection</h1>
+    <form action="/predict" method="POST">
+        <label>Age:</label><input type="number" name="age" required><br>
+        <label>Smoking:</label><select name="smoking"><option value="1">Yes</option><option value="0">No</option></select><br>
+        <label>Yellow Fingers:</label><select name="yellow_fingers"><option value="1">Yes</option><option value="0">No</option></select><br>
+        <label>Anxiety:</label><select name="anxiety"><option value="1">Yes</option><option value="0">No</option></select><br>
+        <label>Chest Pain:</label><select name="chest_pain"><option value="1">Yes</option><option value="0">No</option></select><br>
+        <label>Coughing:</label><select name="coughing"><option value="1">Yes</option><option value="0">No</option></select><br>
+        <label>Fatigue:</label><select name="fatigue"><option value="1">Yes</option><option value="0">No</option></select><br>
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
